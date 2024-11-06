@@ -150,14 +150,8 @@ main{
     }
 }
 
-.email, .senha{
-    justify-content: center;
-}
-
 .nomecompleto, .dadosnutri{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .nomecompleto > .nome, .nomecompleto > .sobrenome, .dadosnutri > .altura, .dadosnutri > .peso{
@@ -263,7 +257,7 @@ input:focus{
     }
 
     .nome, .sobrenome, .idade, .sexo, .altura, .peso, .email, .senha{
-        width: 300px;
+        min-width: 100%;
         margin: 1px;
     }
 
@@ -280,5 +274,15 @@ input:focus{
 
     .nomecompleto, .dadosnutri{
         flex-direction: column;
+        background: #ccc;
+        display: flex;
+        justify-items: start;
     }
+
+    .sobrenome > labe{
+        position: absolute;
+        left: -1000000;
+    }
+
+    
 }
