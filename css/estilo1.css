@@ -168,7 +168,7 @@ main{
 }
 
 .img-perder, .img-manter, .img-ganhar{
-    width: 50%;
+    width: auto;
     height: auto;
 }
 
