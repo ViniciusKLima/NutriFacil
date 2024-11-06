@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;900&display=swap');
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 7px ;
+    width: transform 0.3s ease;
+}
+::-webkit-scrollbar:hover {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    background: #456031;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#3e2a04, #604916, #886a30);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+    font-family: arial;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    color: white;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 10px;
+    background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+    top: 0;
+    z-index: 9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+    margin-left: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+
+button{
+    display: none;
+}
+
+nav{
+    margin-right: 40px;
+}
+
+a{
+    padding: 3px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.entrar{
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.entrar:hover{
+    border-color: rgb(218, 159, 9);
+    color: rgb(218, 159, 9);
+}
+
+a:hover{
+    color: rgb(218, 159, 9);
+    transform: scale(1.2);
+}
+
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-top: 80px;
+    overflow: hidden;
+
+}
+
+.texto1{
+    font-family: Questrial;
+    position: relative;
+    z-index: 1;
+    color: white;
+    left: 40px;
+    font-size: 50px;
+    max-width: 80%;
+}
+
+.saudavel{
+    color: #DD974E;
+}
+
+.img-casal{
+    position: relative;
+    display: flex;
+    flex: 2 1;
+    padding: 0;
+    filter: opacity(65%);
+    left: 150px;
+    height: 120%;
+    transition: transform 1s ease;
+}
+
+.img-casal:hover{
+    transform: scale(1.1);
+}
+
+.casal{
+    position: absolute;
+    display: flex;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.pratos{
+    position: relative;
+    height: 280vh;
+}
+
+.conteudo{
+    display: flex;
+    background: white;
+    height: 280vh;
+    border-radius: 50px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo > section{
+    margin: 20px;
+    height: 30%;
+    width: 90%;
+}
+
+.perderpeso, .manterpeso, .ganharpeso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-perder, .img-manter, .img-ganhar{
+    width: 50%;
+    height: auto;
+}
+
+.tt-perder, .tt-manter, .tt-ganhar{
+    width: 50%;
+    height: 70%;
+    color: #56681B;
+    overflow: hidden;
+}
+
+.t-perder, .t-manter, .t-ganhar{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 50px;
+    display: flex;
+}
+
+.p-perder, .p-manter, .p-ganhar{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre{
+    display: flex;
+    height: 80vh;
+    color: white;
+    font-family: 'DM Sans';
+    justify-content: center;
+    align-items: center;
+}
+
+.c1{
+    position: absolute;
+    width: 50%;
+    left: 60px;
+}
+
+h6{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.linha{
+    margin-top: 4px;
+}
+
+.textosobre{
+    color: black;
+    background: white;
+    left: 60px;
+    margin-top: 6px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.textosobre > p{
+    padding: 25px;
+}
+
+footer {
+    background: linear-gradient(to right, #3e2a04, #604916, #886a30);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p, .footer-content nav, .social-icons {
+margin: 10px 0;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+margin: 0 5px;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 942px){
+    .img-casal{
+        left: 190px;
+        transform: scale(0.85);
+        filter: opacity(55%);
+    }
+
+    .img-casal:hover{
+        transform: scale(0.92);
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .perderpeso, .manterpeso, .ganharpeso{
+        flex-direction: column;
+    }
+
+    .img-perder, .img-manter, .img-ganhar{
+        min-width: 70%;
+        min-height: 50%;
+        max-height: 50%;
+    }
+
+    .manterpeso{
+        flex-direction: column-reverse;
+    }
+
+    .tt-perder, .tt-manter, .tt-ganhar{
+        width: 80%;
+        max-height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 617px){
+    a{
+        display: none;
+    }
+
+    .entrar{
+        display: inline;
+    }
+
+    /*button{
+        position: relative;
+        display: flex;
+        display: inline;
+        right: 8vw;
+        width: 28px;
+        font-size: 21px;;
+        color: white;
+        border: 2px solid white;
+        background-color: inherit;
+        border-radius: 5px;
+    }*/
+
+    .textosobre > p{
+        font-size: small;
+    }
+
+    .texto1{
+        font-size: 40px;
+    }
+
+    .img-casal{
+        position: relative;
+        transform: scale(0.8);
+        left: 190px;
+        filter: opacity(55%);
+    }
+
+    .img-casal:hover{
+        transform: scale(0.85);
+    }
+
+    .t-perder, .t-manter, .t-ganhar{
+        font-size: 35px;
+    }
+
+    .p-perder, .p-manter, .p-ganhar{
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .texto1{
+        font-size: 25px;
+    }
+
+    .casal{
+        filter: opacity(63%);
+    }
+}
+
+@media only screen and (max-width: 404px){
+    .textosobre > p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .textosobre{
+        max-height: 350px;
+        overflow: hidden;
+    }
+}
