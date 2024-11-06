@@ -126,15 +126,12 @@ section > div, .idade, .sexo, .email, .senha{
     }
 
     select{
-        width: 350px;
+        width: 68.5%;
         position: absolute;
-        left: 9%;
+        right: 11%;
         transform: translateY(40%);
         border-color: transparent;
-        border: ;
-        outline: none;
         background: none;
-        color: transparent;
     }
 
     option{
@@ -183,6 +180,7 @@ section > div, .idade, .sexo, .email, .senha{
     background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
     font-size: 17px;
     font-family: arial;
+    border-radius: 20px;
 }
 
 #sexo{
@@ -232,24 +230,21 @@ label{
 }
 
 @media only screen and (max-width: 431px){
+
+    .nome, .sobrenome, .idade, .sexo, .altura, .peso, .email, .senha{
+        width: 300px;
+        margin: 13px;
+    }
+
     .areaform{
         transform: scale(0.8);
-        max-height: 650px;
         padding: 0;
         margin: 0;
     }
 
-    .form{
-        transform: scale(0.86);
-    }
-
     .tt-form{
-        position: absolute;
         height: 50px;
-    }
-
-    input{
-        width: 80vw;
+        top: 0;
     }
 
     .nomecompleto, .dadosnutri{
