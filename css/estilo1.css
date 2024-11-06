@@ -169,6 +169,7 @@ main{
 
 .img-perder, .img-manter, .img-ganhar{
     width: auto;
+    max-width: 100%;
     height: auto;
 }
 
