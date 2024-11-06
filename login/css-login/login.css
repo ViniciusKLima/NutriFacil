@@ -74,6 +74,7 @@ main{
 .form{
     display: flex;
     justify-content: center;
+    justify-items: start;
     margin: 20px;
     padding: 20px;
 }
@@ -81,31 +82,33 @@ main{
 #myForm{
     display: flex;
     justify-content: center;
+    justify-items: center;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .nome, .sobrenome, .idade, .sexo, .altura, .peso, .email, .senha{
-    border-bottom: 1px solid black;
-    margin: 10px;
-    width: 350px;
-    background: #ccc;
+    border-bottom: 2px solid rgb(75, 74, 74);
+    margin-bottom: 7px;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
 
     label{
         position: absolute;
-        left: 9%;
+        left: 10%;
         transform: translateY(20%);
         pointer-events: none;
         transform: translateY(125%);
         transition: 0.15s ease;
+        color: rgb(75, 74, 74);
     }
 
     select{
-        width: 68.5%;
+        width: 71.5%;
         position: absolute;
-        right: 11%;
+        right: 9%;
         transform: translateY(40%);
         border-color: transparent;
         background: none;
@@ -122,6 +125,7 @@ main{
         border: none;
         outline: none;
         padding-top: 7px;
+        padding-left: 7px;
         font-size: 20px;
     }
 
@@ -138,30 +142,65 @@ main{
     }
 
     input:focus~label, input:valid~label{
+        left: 50px;
         font-size: 0.8rem;
+        justify-content: start;
         transform: translateY(0%);
         color: #9FD873;
+        background-color: white;
     }
+}
+
+.email, .senha{
+    justify-content: center;
 }
 
 .nomecompleto, .dadosnutri{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: start;
 }
 
 .nomecompleto > .nome, .nomecompleto > .sobrenome, .dadosnutri > .altura, .dadosnutri > .peso{
-    width: 40%;
-    background: #ccc;
+    width: 50%;
     display: flex;
 
 }
 
-.sobrenome > label, .peso > label{
+.sobrenome, .peso{
+    margin-left: 7px;
+}
+
+.sexo{
+    border: none;
+}
+
+select{
+    outline: none;
+}    
+
+.sobrenome > input:focus~label, .sobrenome > input:valid~label{
     position: relative;
-    transform: translateY(20%);
-    justify-items: start;
+    left: -102px;
+}
+
+.peso > input:focus~label, .peso > input:valid~label{
+    position: relative;
+    left: -140px;
+}
+
+.sobrenome > label, .peso > label{
+    position: static;
+    display: flex;
+    box-sizing: border-box;
+    transform: translateY(40%);
+    transition: 0.15s ease;
+    position: relative;
+    left: -90px;
+}
+
+.peso > label{
+    left: -135px;
 }
 
 .botao1{
@@ -195,14 +234,6 @@ input:focus{
 #data:focus, #sexo:focus{
     border-color: #9FD873;
     outline: none;
-}
-
-label{
-    margin-left: 4px;
-}
-
-.nome, .sobrenome, #data, #sexo, .altura, .peso, .email, .senha{
-    margin: 4px;
 }
 
 @media only screen and (min-height: 800px){
