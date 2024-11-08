@@ -57,9 +57,7 @@ main{
         width: 95vw;
         background: white;
         color: black;
-        border-radius: 30px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-radius: 10px;
         overflow: hidden;
         margin: 0;
     }
@@ -103,6 +101,12 @@ thead th{
 
 @media (max-width: 768px){
     th, td {
-        font-size: 14px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 507px){
+    .div1{
+        overflow: scroll;
     }
 }
