@@ -50,11 +50,59 @@ main{
     justify-content: center;
 
     .div1{
+        display: flex;
         position: absolute;
         top: 25px;
-        height: 80vh;
-        width: 90vw;
+        height: auto;
+        width: 95vw;
         background: white;
+        color: black;
         border-radius: 30px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+        margin: 0;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+td{
+    transform: scale(0.9);
+}
+
+th {
+    background-color: #f2f2f2;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+@media (max-width: 937px){ 
+    table{
+        font-size: small;
+        height: 100px;
+    }
+
+    td{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 768px){
+    th, td {
+        font-size: 14px;
     }
 }
