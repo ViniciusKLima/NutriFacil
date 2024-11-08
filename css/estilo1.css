@@ -33,7 +33,7 @@ body{
     background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
     font-family: arial;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header{
