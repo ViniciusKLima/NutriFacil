@@ -33,7 +33,7 @@ body{
     background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
     font-family: arial;
     flex-wrap: wrap;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header{
@@ -95,8 +95,6 @@ main{
     height: 80vh;
     height: 80dvh;
     margin-top: 80px;
-    overflow: hidden;
-
 }
 
 .texto1{
@@ -115,9 +113,7 @@ main{
 
 .img-casal{
     position: relative;
-    display: flex;
-    flex: 2 1;
-    padding: 0;
+    display: inline-block;
     filter: opacity(65%);
     left: 150px;
     height: 120%;
@@ -130,9 +126,7 @@ main{
 
 .casal{
     position: absolute;
-    display: flex;
     right: 0;
-    justify-content: flex-end;
 }
 
 .pratos{
