@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+  overflow: hidden;
+  font-size: arial;
+}
+
+img{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  min-width: 1000px;
+  min-height: 100vh;
+  z-index: -9;
+  filter: blur(2px);
+  opacity: 0.8;
+}
+
+header{
+  background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100vw;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.logo{
+  margin-left: 20px;
+  font-family: 'nunito', sans-serif;
+}
+
+.sair{
+  border: 1.5px solid white;
+  border-radius: 5px;
+  margin-right: 32px;
+  transform: transform 0.3s ease;
+}
+
+.sair:hover{
+  color: rgb(218, 159, 9);
+  border: 1.5px solid rgb(218, 159, 9);
+}
+
+a{
+  text-decoration: none;
+  padding: 10px;
+  color: inherit;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 350px;
+  top: 7%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.621);
+  font-family: 'poppins', sans-serif;
+}
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+  font-family: 'poppins', sans-serif;
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  width: 214px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 #60d805;
+  background-color: #7a5911;
+  font-family: 'poppins', sans-serif;
+}
+
+#btnSignin{
+  left: 6px;
+  font-family: 'poppins', sans-serif;
+}
+
+#btnSignup{
+  position: relative;
+  left: 10px;
+  font-family: 'poppins', sans-serif;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 25px;
+  color: white;
+}
+
+.btnColor {
+  position: absolute;
+  width: 104px;
+  height: 100%;
+  color: white;
+  background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: 1px solid #60d805;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+}
+
+button[type="submit"] {
+  background: #438E46;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 118px;
+}
+
+.iPassword2 {
+  top: 195px;
+}
