@@ -36,7 +36,7 @@ body{
     overflow-x: hidden;
 }
 
-header{
+.cabecalho{
     display: flex;
     position: fixed;
     color: white;
@@ -61,7 +61,7 @@ nav{
     margin-right: 40px;
 }
 
-a{
+.links, .entrar{
     padding: 3px;
     margin-left: 50px;
     text-decoration: none;
@@ -81,9 +81,10 @@ a{
     color: rgb(218, 159, 9);
 }
 
-a:hover{
+.links:hover{
     color: rgb(218, 159, 9);
     transform: scale(1.2);
+    text-decoration: none;
 }
 
 
@@ -98,19 +99,11 @@ main{
     margin-top: 80px;
 }
 
-.carousel-inner, .carousel-item{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    justify-items: start;
-}
-
 .texto1, .texto2, .texto3{
     position: absolute;
-    margin-left: 10%;
+    margin-left: 15%;
     color: white;
     top: 165px;
-    z-index: 0;
     z-index: 1;
 }
 
@@ -119,25 +112,16 @@ main{
     z-index: 1;
 }
 
-.foto1, .foto2, .foto3{
-    top: 0;
-    right: 0;
-    max-height: 100vh;
-}
-
-.foto1{
-    position: relative;
-    right: 0;
-    top: -40px;
-}
-
-.foto2{
-    position: relative;
-    top: -100px;
-}
-
 .saudavel{
     color: #DD974E;
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: end;
+    justify-items: end;
+    transform: scale(1.1);
+    filter: opacity(80%);
 }
 
 /*.carousel-control-next:hover{
