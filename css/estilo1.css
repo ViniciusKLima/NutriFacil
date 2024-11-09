@@ -104,7 +104,7 @@ main{
     margin-left: 15%;
     color: white;
     top: 165px;
-    z-index: 1;
+    z-index: 9;
 }
 
 .l1, .l2, .l3{
@@ -123,6 +123,7 @@ main{
     justify-items: end;
     transform: scale(1.1);
     filter: opacity(70%);
+    z-index: 0;
 }
 
 .pratos{
