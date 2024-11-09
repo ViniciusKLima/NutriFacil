@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="../img/folha.png" sizes="16x16">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>NutriFácil</h1>
+    </div>
+
+    <div class="sair">
+        <a href="../index.html">Sair</a>
+    </div>
+  </header>
+
+  <img src="../img/familia.png">
+
+
+  <div class="container">
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Entrar</button>
+      <button id="btnSignup">Cadastrar</button>
+    </div>
+
+    <form id="signin" action="../opcoes-NF/index.html" method="get">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Senha" required />
+      <i class="fas fa-lock iPassword"></i>
+      <a href="../opcoes-NF/index.html"><button type="submit">Entrar</button></a>
+    </form>
+
+    <form id="signup">
+      <input type="text" placeholder="Digite seu email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Digite sua senha" required />
+      <i class="fas fa-lock iPassword"></i>
+      <input type="password" placeholder="Digite sua senha" required />
+      <i class="fas fa-lock iPassword2"></i>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            this.submit();
+            window.location.href="../index.html";
+        });
+    });
+</script>
+</body>
+</html>
