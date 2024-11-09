@@ -132,7 +132,7 @@ form {
   transition: .3s;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="password"] {
   border: 1px solid #60d805;
   margin-top: 40px;
   border-radius: 60px;
