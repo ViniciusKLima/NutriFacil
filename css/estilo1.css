@@ -79,6 +79,7 @@ nav{
 .entrar:hover{
     border-color: rgb(218, 159, 9);
     color: rgb(218, 159, 9);
+    text-decoration: none;
 }
 
 .links:hover{
@@ -112,7 +113,8 @@ main{
     z-index: 1;
 }
 
-.saudavel{
+.amarelo{
+    font-size: 60px;
     color: #DD974E;
 }
 
@@ -121,14 +123,8 @@ main{
     justify-content: end;
     justify-items: end;
     transform: scale(1.1);
-    filter: opacity(80%);
+    filter: opacity(70%);
 }
-
-/*.carousel-control-next:hover{
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    background-color: rgba(0, 0, 0, 0.284);
-    z-index: 0;
-}*/
 
 .pratos{
     position: relative;
@@ -163,23 +159,42 @@ main{
     width: auto;
     max-width: 100%;
     height: auto;
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+
+.img-perder:hover, .img-manter:hover, .img-ganhar:hover{
+    transform: scale(1.15);
 }
 
 .tt-perder, .tt-manter, .tt-ganhar{
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    height: 70%;
+    height: 100%;
     color: #56681B;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tt-perder:hover, .tt-manter:hover, .tt-ganhar:hover{
+    transform: translate(1.1);
+    color: black;
 }
 
 .t-perder, .t-manter, .t-ganhar{
-    font-family: 'League Spartan', sans-serif;
-    font-size: 50px;
-    display: flex;
+    font-family: 'League Spartan'200, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    
+    
 }
 
 .p-perder, .p-manter, .p-ganhar{
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
 .sobre{
