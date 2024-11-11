@@ -309,10 +309,6 @@ text-decoration: underline;
         font-size: small;
     }
 
-    .texto1{
-        font-size: 40px;
-    }
-
     .t-perder, .t-manter, .t-ganhar{
         font-size: 35px;
     }
@@ -323,18 +319,21 @@ text-decoration: underline;
 }
 
 @media only screen and (max-width: 550px){
-    .texto1{
-        font-size: 25px;
-    }
-
-    .casal{
-        filter: opacity(63%);
+    .texto1, .texto2, .texto3{
+        left: 0;
+        transform: scale(0.6);
     }
 }
 
 @media only screen and (max-width: 404px){
     .textosobre > p{
         font-size: 10px;
+    }
+    
+    .texto1, .texto2, .texto3{
+        left: 0%;
+        top: 15%;
+        transform: scale(0.5);
     }
 }
 
