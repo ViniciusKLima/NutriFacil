@@ -116,10 +116,13 @@ main{
     color: #DD974E;
 }
 
+.foto1, .foto2, .foto3{
+    filter: opacity(70%);
+}
+
 .carousel-item{
     display: flex;
     justify-items: end;
-    filter: opacity(70%);
     z-index: 0;
 }
 
@@ -283,17 +286,15 @@ text-decoration: underline;
     }
 
     .carousel-item{
+        display: flex;
         justify-content: center;
         justify-items: center;
-
     }
 
     .texto1, .texto2, .texto3{
         left: 6%;
         transform: scale(0.8);
     }
-
-
 }
 
 @media only screen and (max-width: 617px){
@@ -315,6 +316,21 @@ text-decoration: underline;
 
     .p-perder, .p-manter, .p-ganhar{
         font-size: 75%;
+    }
+
+    .foto1, .foto2, .foto3{
+        position: relative;
+        width: auto;
+
+        img{
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            height: 100%;
+            width: auto;
+            position: relative;
+            left: -230px;
+        }
     }
 }
 
