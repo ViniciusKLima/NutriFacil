@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;900&display=swap');
 
+/*Edição da barra de rolagem*/
 ::-webkit-scrollbar {
     height: 0px;
     width: 7px ;
@@ -36,6 +37,7 @@ body{
     overflow-x: hidden;
 }
 
+/*Estilo do Cabeçalho*/
 .cabecalho{
     display: flex;
     position: fixed;
@@ -58,6 +60,12 @@ body{
 
 nav{
     margin-right: 40px;
+}
+
+/*Botões do Cabeçalho*/
+button{
+    background: none;
+    border: none; 
 }
 
 .links, .entrar{
@@ -87,7 +95,7 @@ nav{
     text-decoration: none;
 }
 
-
+/*Parte do Carrossel*/
 main{
     position: relative;
     display: flex;
@@ -98,6 +106,7 @@ main{
     margin-top: 30px;
 }
 
+/*Textos do Carrossel*/
 .texto1, .texto2, .texto3{
     position: absolute;
     left: 15%;
@@ -106,31 +115,39 @@ main{
     z-index: 9;
 }
 
+/*Linhas individuais dos textos*/
 .l1, .l2, .l3{
     font-size: 60px;
     z-index: 1;
 }
 
+/*Palavras em destaque*/
 .amarelo{
     font-size: 60px;
     color: #DD974E;
 }
 
+/*Fotos do carrossel*/
 .foto1, .foto2, .foto3{
+    position: relative;
     filter: opacity(70%);
+    right: 0;
 }
 
+/*Divs dos slides*/
 .carousel-item{
     display: flex;
     justify-items: end;
     z-index: 0;
 }
 
+/*Parte onde fica as dietas*/
 .pratos{
     position: relative;
     height: 280vh;
 }
 
+/*Todos os elementos de dentro*/
 .conteudo{
     display: flex;
     background: white;
@@ -149,12 +166,14 @@ main{
     width: 90%;
 }
 
+/*Divs separadas*/
 .perderpeso, .manterpeso, .ganharpeso{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*Imagens dos pratos*/
 .img-perder, .img-manter, .img-ganhar{
     width: auto;
     max-width: 100%;
@@ -167,6 +186,7 @@ main{
     transform: scale(1.15);
 }
 
+/*Todos os textos*/
 .tt-perder, .tt-manter, .tt-ganhar{
     display: flex;
     flex-direction: column;
@@ -179,11 +199,7 @@ main{
     transition: transform 0.3s ease;
 }
 
-.tt-perder:hover, .tt-manter:hover, .tt-ganhar:hover{
-    transform: translate(1.1);
-    color: black;
-}
-
+/*Somente os titulos*/
 .t-perder, .t-manter, .t-ganhar{
     font-family: 'League Spartan'200, sans-serif;
     font-size: 60px;
@@ -192,11 +208,13 @@ main{
     
 }
 
+/*Somente os paragrafos*/
 .p-perder, .p-manter, .p-ganhar{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
 
+/*Parte das Dúvidas*/
 .sobre{
     display: flex;
     height: 80vh;
@@ -206,24 +224,26 @@ main{
     align-items: center;
 }
 
-/*Parte*/
-
+/*Todo o conteúdo*/
 .c1{
     position: absolute;
     width: 50%;
     left: 60px;
 }
 
+/*Titulo das perguntas*/
 h6{
     font-size: 15px;
     margin-top: 20px;
 }
 
+/*primeira pergunta*/
 .quem{
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
 
+/*Sessão da pergunta aberta*/
 .textosobre{
     color: black;
     background: white;
@@ -233,6 +253,7 @@ h6{
     border-bottom-right-radius: 10px;
 }
 
+/*Somente o paragrafo*/
 .textosobre > p{
     padding: 25px;
 }
@@ -244,18 +265,16 @@ footer {
     text-align: center;
 }
 
-.footer-content p, .footer-content nav, .social-icons {
-margin: 10px 0;
-}
 
-footer a {
-color: #fff;
-text-decoration: none;
-margin: 0 5px;
-}
+@media only screen and (max-width: 982px){
+    .tt-perder, .tt-manter, .tt-ganhar{
+        transform: scale(0.85);
 
-footer a:hover {
-text-decoration: underline;
+    }
+
+    .img-perder, .img-manter, .img-ganhar{
+        min-height: 50%;
+    }
 }
 
 @media only screen and (max-width: 900px){
@@ -273,11 +292,12 @@ text-decoration: underline;
     }
 
     .tt-perder, .tt-manter, .tt-ganhar{
-        width: 80%;
+        width: 100%;
         max-height: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        transform: scale(0.7); 
     }
 
     main{
@@ -298,7 +318,7 @@ text-decoration: underline;
 }
 
 @media only screen and (max-width: 617px){
-    a{
+    button{
         display: none;
     }
 
@@ -308,6 +328,11 @@ text-decoration: underline;
 
     .textosobre > p{
         font-size: small;
+    }
+
+    .tt-perder, .tt-manter, .tt-ganhar{
+        transform: scale(1);
+        width: 80%;
     }
 
     .t-perder, .t-manter, .t-ganhar{

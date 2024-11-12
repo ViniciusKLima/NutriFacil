@@ -15,109 +15,133 @@
 </head>
 <body>
     <header class="cabecalho">
+        <!--LOGO-->
         <div class="logo">
             <h1>NutriFácil</h1>
         </div>
+        <!--BOTÔES DO CABEÇALHO-->
         <nav class="menu">
-            <a class="links" href="opcoes-NF/index.html">Início</a>
-            <a class="links" href="principal/index.html">Dietas</a>
-            <a class="links" href="#">Dúvidas</a>
+            <button class="links" onclick="scrollToSection('inicio')">Início</button>
+            <button class="links" onclick="scrollToSection('dietas')">Dietas</button>
+            <button class="links" onclick="scrollToSection('duvidas')">Dúvidas</button>
             <a class="entrar" href="login-2/index.html">Entrar</a>
         </nav>
     </header>
 
-    <main>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="slide">
-                    <div class="texto1">
-                        <h2 class="l1">Nutrição prática</h2>
-                        <h2 class="l2">para uma vida</h2>
-                        <h2 class="l3">mais <span class="amarelo">saudável</span></h2>
+    <!--CARROSSEL-->
+    <section id="inicio">
+        <main>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <!--Slide 1-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="slide">
+                        <div class="texto1">
+                            <h2 class="l1">Nutrição prática</h2>
+                            <h2 class="l2">para uma vida</h2>
+                            <h2 class="l3">mais <span class="amarelo">saudável</span></h2>
+                        </div>
+                        <div class="foto1">
+                            <img src="img/casalfit (3).png">
+                        </div>
                     </div>
-                    <div class="foto1">
-                        <img src="img/casalfit (3).png">
+                  </div>
+                  <!--Slide 2-->
+                  <div class="carousel-item">
+                    <div class="slide">
+                        <div class="texto2">
+                            <h2 class="l1">Transforme sua</h2>
+                            <h2 class="amarelo">alimentação,</h2>
+                            <h2 class="l3">transforme <span class="amarelo">sua vida</span></h2>
+                        </div>
+                        <div class="foto2">
+                            <img src="img/img-2.png">
+                        </div>
                     </div>
+                  </div>
+                  <!--Slide 3-->
+                  <div class="carousel-item">
+                    <div class="slide">
+                        <div class="texto3">
+                            <h2 class="l1">Dietas</h2>
+                            <h2 class="amarelo">personalizadas</h2>
+                            <h2 class="l3">para você</h2>
+                        </div>
+                        <div class="foto3"><img src="img/img3.png">
+                        </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="slide">
-                    <div class="texto2">
-                        <h2 class="l1">Transforme sua</h2>
-                        <h2 class="amarelo">alimentação,</h2>
-                        <h2 class="l3">transforme <span class="amarelo">sua vida</span></h2>
-                    </div>
-                    <div class="foto2">
-                        <img src="img/img-2.png">
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="slide">
-                    <div class="texto3">
-                        <h2 class="l1">Dietas</h2>
-                        <h2 class="amarelo">personalizadas</h2>
-                        <h2 class="l3">para você</h2>
-                    </div>
-                    <div class="foto3"><img src="img/img3.png">
-                    </div>
-                </div>
-              </div>
+                <!--Botões Anterior/Próximo do Carrossel-->
+               <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
             </div>
-           <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </button>
-        </div>
-    </main>
+        </main>
+    </section>
 
-    <aside class="pratos">
-        <section class="conteudo">
-            <section class="perderpeso">
-                <img class="img-perder" src="img/perderpeso-removebg-preview.png">
-                <div class="tt-perder">
-                    <h2 class="t-perder">Perder Peso</h2>
-                    <p class="p-perder">Para quem deseja reduzir medidas e atingir seu peso ideal de forma saudável. Nossa dieta de emagrecimento é equilibrada e adaptada às suas necessidades nutricionais, proporcionando saciedade e energia ao longo do dia. Ela inclui alimentos ricos em fibras, proteínas e nutrientes essenciais que ajudam a acelerar o metabolismo e manter a saúde em primeiro lugar.</p>
-                </div>
+    <!--PARTE DAS DIETAS-->
+    <section id="dietas">
+        <aside class="pratos">
+            <section class="conteudo">
+                <!--Div Perder Peso-->
+                <section class="perderpeso">
+                    <img class="img-perder" src="img/perderpeso-removebg-preview.png">
+                    <div class="tt-perder">
+                        <h2 class="t-perder">Perder Peso</h2>
+                        <p class="p-perder">Para quem deseja reduzir medidas e atingir seu peso ideal de forma saudável. Nossa dieta de emagrecimento é equilibrada e adaptada às suas necessidades nutricionais, proporcionando saciedade e energia ao longo do dia. Ela inclui alimentos ricos em fibras, proteínas e nutrientes essenciais que ajudam a acelerar o metabolismo e manter a saúde em primeiro lugar.</p>
+                    </div>
+                </section>
+                <!--Div Manter Peso-->
+                <section class="manterpeso">
+                    <div class="tt-manter">
+                        <h2 class="t-manter">Manter Peso</h2>
+                        <p class="p-manter">Ideal para quem já atingiu o peso desejado e quer mantê-lo com saúde e disposição. Nossa dieta de manutenção oferece um plano alimentar que equilibra os grupos alimentares essenciais, permitindo uma ingestão calórica balanceada para preservar o peso atual. Mantemos o foco em alimentos variados e saudáveis, para garantir que você se sinta bem e nutrido todos os dias.</p>
+                    </div>
+                    <img class="img-manter" src="img/manterpeso-removebg-preview.png">
+                </section>
+                <!--Div Ganhar Peso-->
+                <section class="ganharpeso">
+                    <img class="img-ganhar" src="img/ganharpeso-removebg-preview.png">
+                    <div class="tt-ganhar">
+                        <h2 class="t-ganhar">Ganhar Peso</h2>
+                        <p class="p-ganhar">Para quem busca aumentar a massa corporal de maneira saudável e controlada. Nossa dieta de ganho de peso é rica em proteínas, carboidratos de qualidade e gorduras saudáveis, além de ser planejada para favorecer o ganho de massa muscular e o fortalecimento do corpo. Cada refeição é pensada para dar a você mais energia e nutrientes, ajudando no desenvolvimento saudável.</p>
+                    </div>
+                </section>
             </section>
-            <section class="manterpeso">
-                <div class="tt-manter">
-                    <h2 class="t-manter">Manter Peso</h2>
-                    <p class="p-manter">Ideal para quem já atingiu o peso desejado e quer mantê-lo com saúde e disposição. Nossa dieta de manutenção oferece um plano alimentar que equilibra os grupos alimentares essenciais, permitindo uma ingestão calórica balanceada para preservar o peso atual. Mantemos o foco em alimentos variados e saudáveis, para garantir que você se sinta bem e nutrido todos os dias.</p>
-                </div>
-                <img class="img-manter" src="img/manterpeso-removebg-preview.png">
-            </section>
-            <section class="ganharpeso">
-                <img class="img-ganhar" src="img/ganharpeso-removebg-preview.png">
-                <div class="tt-ganhar">
-                    <h2 class="t-ganhar">Ganhar Peso</h2>
-                    <p class="p-ganhar">Para quem busca aumentar a massa corporal de maneira saudável e controlada. Nossa dieta de ganho de peso é rica em proteínas, carboidratos de qualidade e gorduras saudáveis, além de ser planejada para favorecer o ganho de massa muscular e o fortalecimento do corpo. Cada refeição é pensada para dar a você mais energia e nutrientes, ajudando no desenvolvimento saudável.</p>
-                </div>
-            </section>
-        </section>
-    </aside>
+        </aside>
+    </section>
 
-    <aside class="sobre">
-        <section class="c1">
-            <section class="pq">
-                <h6 class="quem">Quem somos? ></h6>
-                <h6>Por que usar a NutriFácil? ></h6>
+    <!--Parte das Dúvidas-->
+    <section id="duvidas">
+        <aside class="sobre">
+            <section class="c1">
+                <section class="pq">
+                    <h6 class="quem">Quem somos? ></h6>
+                    <h6>Por que usar a NutriFácil? ></h6>
+                </section>
+                <section class="textosobre">
+                    <p>Você está pronto para transformar sua saúde e bem-estar? Em nosso site de dieta, oferecemos não apenas planos alimentares personalizados, mas também dicas valiosas e recursos que ajudam você a alcançar seus objetivos. Nossa abordagem é baseada em ciência e adaptada às suas necessidades individuais, garantindo que você não apenas perca peso, mas também mantenha um estilo de vida saudável</p>
+                </section>
             </section>
-            <section class="textosobre">
-                <p>Você está pronto para transformar sua saúde e bem-estar? Em nosso site de dieta, oferecemos não apenas planos alimentares personalizados, mas também dicas valiosas e recursos que ajudam você a alcançar seus objetivos. Nossa abordagem é baseada em ciência e adaptada às suas necessidades individuais, garantindo que você não apenas perca peso, mas também mantenha um estilo de vida saudável</p>
-            </section>
-        </section>
-    </aside>
+        </aside>
+    </section>
 
     <footer>
         <div class="footer-content">
           <p>&copy; 2024 NutriFácil. Todos os direitos reservados.</p>
         </div>
       </footer>
+
+    <script>
+        function scrollToSection(id){
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
