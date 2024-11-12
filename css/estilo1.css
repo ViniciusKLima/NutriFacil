@@ -131,7 +131,6 @@ main{
 .foto1, .foto2, .foto3{
     position: relative;
     filter: opacity(70%);
-    right: 0;
 }
 
 /*Divs dos slides*/
