@@ -81,6 +81,7 @@ a{
   border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.621);
   font-family: 'poppins', sans-serif;
+  z-index: 1;
 }
 
 form {
@@ -182,4 +183,23 @@ i {
 
 .iPassword2 {
   top: 195px;
+}
+
+.notification{
+  font-family: poppins;
+  right: 161px;
+  position: absolute;
+  display: flex;
+  top: 173px;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: top 0.5s ease;
+  z-index: 0;
+}
+
+.notification.show{
+  top: 110px;
 }

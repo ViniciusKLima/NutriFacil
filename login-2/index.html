@@ -38,7 +38,7 @@
       <a href="../opcoes-NF/index.html"><button type="submit">Entrar</button></a>
     </form>
 
-    <form id="signup">
+    <form id="signup" onsubmit="return cadastrarUsuario(event)">
       <input type="text" placeholder="Digite seu nome" required />
       <i class="fas fa-envelope iEmail"></i>
       <input type="email" placeholder="Digite seu email" required />
@@ -48,6 +48,8 @@
       <button type="submit">Cadastrar</button>
     </form>
   </div>
+
+  <div id="notification" class="notification">Usuário Cadastrado com Sucesso!</div>
 
   <script src="js/index.js"></script>
   <script>
