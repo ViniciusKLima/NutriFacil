@@ -440,7 +440,7 @@ footer {
     .ddv p{
         position: relative;
         top: -6px;
-        font-size: 12px;
+        font-size: 15px;
         height: 10px;
         width: 130%;
         font-size: 8.5px;
@@ -466,10 +466,6 @@ footer {
         transform: scale(0.6);
     }
 
-    .duvidas{
-        
-    }
-
     .ddv h4{
         font-size: 10px;
     }
@@ -492,22 +488,6 @@ footer {
 }
 
 @media only screen and (max-width: 350px){
-    .scrollable {
-        overflow: hidden; /* Oculta a barra de rolagem */
-      }
-      
-    .scrollable:hover {
-    overflow-y: scroll; /* Permite a rolagem ao passar o mouse */
-    }
-    
-    /* Para navegadores modernos */
-    .scrollable {
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    }
-    .scrollable::-webkit-scrollbar {
-    }
-
-
     .ft-ddv{
         left: -18px;
     }
@@ -518,6 +498,6 @@ footer {
         left: -15px;
         margin-bottom: 10px;
         height: 100%;
-        overflow: scroll;
+        overflow: hidden;
     }
 }
