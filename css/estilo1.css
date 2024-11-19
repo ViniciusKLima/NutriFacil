@@ -270,8 +270,7 @@ main{
 }
 
 .texto-ddv{
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 .ddv h4{
@@ -289,6 +288,9 @@ footer {
     background: linear-gradient(to right, #3e2a04, #604916, #886a30);
     color: #fff;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
 }
@@ -401,11 +403,15 @@ footer {
         overflow: hidden;
     }
 
+    .fundo-duvidas{
+        height: 680px;
+    }
+
     .duvidas{
-        width: 100%;
-        transform: scale(0.75);
-        margin: 0;
-        height: 30%;
+        top: 40px;
+        width: 75%;
+        height: 20%;
+        margin: 10px;
         align-items: center;
 
     }
@@ -423,16 +429,34 @@ footer {
         top: 0;
         position: relative;
         left: -20%;
+    
+    }
 
+    .foto-ddv{
+        width: 70px;
+        height: auto;
     }
 
     .ddv p{
+        position: relative;
+        top: -6px;
         font-size: 12px;
+        height: 10px;
+        width: 130%;
+        font-size: 8.5px;
+    }
+
+    .ddv h4{
+        font-size: 16px;
     }
 
     .texto-ddv{
+        position: relative;
+        top: -18px;
+        margin: 0;
         font-size: 10px;
-        width: 100%;
+        width: auto;
+        left: -16%;
     }
 }
 
@@ -440,6 +464,18 @@ footer {
     .texto1, .texto2, .texto3{
         left: 0;
         transform: scale(0.6);
+    }
+
+    .duvidas{
+        
+    }
+
+    .ddv h4{
+        font-size: 10px;
+    }
+
+    .ddv p{
+        font-size: 7px;
     }
 }
 
@@ -456,8 +492,32 @@ footer {
 }
 
 @media only screen and (max-width: 350px){
-    .textosobre{
-        max-height: 350px;
-        overflow: hidden;
+    .scrollable {
+        overflow: hidden; /* Oculta a barra de rolagem */
+      }
+      
+    .scrollable:hover {
+    overflow-y: scroll; /* Permite a rolagem ao passar o mouse */
+    }
+    
+    /* Para navegadores modernos */
+    .scrollable {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+    .scrollable::-webkit-scrollbar {
+    }
+
+
+    .ft-ddv{
+        left: -18px;
+    }
+
+    .texto-ddv{
+        top: 10px;
+        width: 200%;
+        left: -15px;
+        margin-bottom: 10px;
+        height: 100%;
+        overflow: scroll;
     }
 }
