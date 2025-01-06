@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    header("Location: login.html");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,17 +14,16 @@ if (!isset($_SESSION['username'])) {
         </div>
 
         <nav class="menu">
-            <a class="sair" href="../login/login.html">Sair</a>
+            <a class="sair" href="../login/index.html">Sair</a>
         </nav>
     </header>
 
     <main>
         <div class="tt">
-            <?php echo "<h1>Bem-vindo, " . htmlspecialchars($_SESSION['username']) . "!</h1>"; ?>
             <h1>QUAL A SUA META?</h1>
         </div>
         <div class="opcoes">
-            <a class="opcao-link" href="../principal/perder.html">
+            <a class="opcao-link" href="../principal/perder/index.html">
                 <section class="Perder">
                     <div class="div-img">
                         <img class="img-perder" src="../img/emagrecimento_emagrecereperderpeso-1024x576.webp">
@@ -43,7 +34,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                 </section>
             </a>
-            <a class="opcao-link" href="../principal/manter.html">
+            <a class="opcao-link" href="../principal/manter/index.html">
                 <section class="manter">
                     <div class="div-manter">
                         <img class="img-manter" src="../img/images.jpeg">
@@ -54,7 +45,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                 </section>
             </a>
-            <a class="opcao-link" href="../principal/ganhar.html">
+            <a class="opcao-link" href="../principal/ganhar/index.html">
                 <section class="ganhar">
                     <div class="div-img">
                         <img class="img-ganhar" src="../img/musculo.webp">
