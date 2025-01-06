@@ -30,7 +30,7 @@
       <button id="btnSignup">Cadastrar</button>
     </div>
 
-    <form id="signin" action="../opcoes-NF/index.html" method="post">
+    <form id="signin" action="../opcoes-NF/index.html" method="get">
       <input type="text" name="username" placeholder="Email" required />
       <i class="fas fa-envelope iEmail"></i>
       <input type="password" name="password" placeholder="Senha" required />
@@ -38,7 +38,7 @@
       <a href="../opcoes-NF/index.html"><button type="submit">Entrar</button></a>
     </form>
 
-    <form id="signup" onsubmit="return cadastrarUsuario(event)" action="../login/index.html" method="post">
+    <form id="signup" onsubmit="return cadastrarUsuario(event)" action="../login/index.html" method="get">
       <input type="text" name="username" placeholder="Crie seu nome de usuário" required />
       <i class="fas fa-envelope iEmail"></i>
       <input type="password" name="password" placeholder="Crie sua senha" required />
